@@ -5,7 +5,7 @@
       <paths name="ssh://cinnamon@192.168.94.135:22/usr/bin/python3">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_539" local="$PROJECT_DIR$" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
