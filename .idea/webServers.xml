@@ -2,11 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-<<<<<<< HEAD
       <webServer id="ssh://cinnamon@192.168.94.135:22/usr/bin/python3" name="ssh://cinnamon@192.168.94.135:22/usr/bin/python3" url="http://192.168.94.135:8000">
-=======
-      <webServer id="ssh://cinnamon@192.168.94.135:22/usr/bin/python3" name="ssh://cinnamon@192.168.94.135:22/usr/bin/python3" url="http://192.168.94.135:8000/">
->>>>>>> 78a3e5b60024b367312119bcedac2f403508f946
         <fileTransfer host="192.168.94.135" port="22" rootFolder="/home/cinnamon/monitoring" accessType="SFTP">
           <option name="port" value="22" />
         </fileTransfer>
