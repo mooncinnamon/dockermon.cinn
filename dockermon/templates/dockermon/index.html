@@ -5,17 +5,18 @@
     <title>DockerMon</title>
     <script src="https://unpkg.com/vue"></script>
     <script>
-        var app = new Vue({
+        var cpu_usage = new Vue({
             e1: '#app',
             data:{
-
             }
         })
     </script>
 </head>
 <body>
-<div cpu_usage="app">
+{% verbatim %}
+<div id="cpu_usage">
     {{ result }}
 </div>
+{% endverbatim %}
 </body>
 </html>
