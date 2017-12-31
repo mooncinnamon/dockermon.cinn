@@ -4,9 +4,12 @@ import axios from 'axios'
 
 Vue.prototype.$http = axios
 
+import Demon from "./components/Demo.vue"
 
 /*아이유 노래 짱잘해*/
-new Vue({
+
+
+const app = new Vue({
     el:'#app',
     template : '<App/>',
     components: { App }

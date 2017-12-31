@@ -1,22 +1,18 @@
 <!DOCTYPE html>
+{% load render_bundle from webpack_loader %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DockerMon</title>
     <script src="https://unpkg.com/vue"></script>
     <script>
-        var cpu_usage = new Vue({
-            e1: '#app',
-            data:{
-            }
-        })
+
     </script>
 </head>
 <body>
-{% verbatim %}
-<div id="cpu_usage">
-    {{ result }}
-</div>
-{% endverbatim %}
+    <div id="app">
+        <demo></demo>
+    </div>
+    {% render_bundle 'main' %}
 </body>
 </html>
