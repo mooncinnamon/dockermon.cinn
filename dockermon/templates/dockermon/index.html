@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-{% load render_bundle from webpack_loader %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DockerMon</title>
-    <script src="https://unpkg.com/vue"></script>
-    <script>
-
-    </script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
+{% block content %}
     <div id="app">
-        <demo></demo>
+        {{ message }}
     </div>
-    {% render_bundle 'main' %}
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '안녕하세요 Vue!'
+            }
+        })
+    </script>
+{% endblock %}
 </body>
 </html>
